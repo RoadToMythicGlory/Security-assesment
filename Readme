@@ -1,0 +1,37 @@
+Server Security Script
+This script performs the following tasks to enhance the security of your server:
+
+Updates the operating system and applications
+Installs and configures a firewall
+Implements access controls
+Scans for open ports
+Searches for potential exploits
+Enables logging and monitoring
+Usage
+
+Clone this repository to your server:
+
+git clone https://github.com/RoadToMythicGlory/Security-assesment.git
+
+Edit the server-security.sh script to set the desired username and access controls:
+bash
+
+# Replace 'username' with the desired username:
+
+sudo adduser username
+sudo usermod -aG sudo username
+
+# Edit sshd_config to disable root login and enable key-based authentication
+
+sudo nano /etc/ssh/sshd_config
+
+Run the server-security.sh script:
+
+
+cd yourrepository
+bash server-security.sh
+Review the nmap_output.txt and searchsploit output files to identify any vulnerabilities that need to be addressed.
+Note
+Before running this script, make sure you have permission from the owner of the system to perform security scans
+and implement security measures. Additionally, thoroughly assess the risks and consult with a security expert if you're 
+unsure about any aspect of server security.
